@@ -22,7 +22,6 @@ public class BotInitializer {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
         try {
             telegramBotsApi.registerBot(mainBotService);
-            System.out.println("s");
 
         }
         catch (TelegramApiException e) {

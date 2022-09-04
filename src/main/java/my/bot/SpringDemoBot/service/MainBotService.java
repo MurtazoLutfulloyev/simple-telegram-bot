@@ -62,15 +62,6 @@ public class MainBotService extends TelegramLongPollingBot {
 
             switch (messageText) {
                 case "/start":
-
-                    SendMessage sendMessage = new SendMessage();
-                    sendMessage.setChatId(update.getMessage().getChatId());
-                    sendMessage.setText("salom");
-                    try {
-                        execute(sendMessage);
-                    } catch (TelegramApiException e) {
-                        throw new RuntimeException(e);
-                    }
                     break;
 
                 case "/help":
